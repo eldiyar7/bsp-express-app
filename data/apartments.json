@@ -1,0 +1,67 @@
+[
+  {
+    "status": "Elston Timber Lofts",
+    "price": 1200,
+    "beds": 3,
+    "baths": 1.5,
+    "area": 2000,
+    "address": "3641 N Elston Ave",
+    "mainPicture": "apartment-1/project-1",
+    "pictures": [
+      "apartment-1/img-1",
+      "apartment-1/img-2",
+      "apartment-1/img-3",
+      "apartment-1/img-4",
+      "apartment-1/img-5"
+    ]
+  },
+  {
+    "status": "New",
+    "price": 2200,
+    "beds": 5,
+    "baths": 2,
+    "area": 5000,
+    "address": "1 N Chicago Ave",
+    "mainPicture": "apartment-2/project-2",
+    "pictures": [
+      "apartment-2/img-1",
+      "apartment-2/img-2",
+      "apartment-2/img-3",
+      "apartment-2/img-4",
+      "apartment-2/img-5",
+      "apartment-2/img-6"
+    ]
+  },
+  {
+    "status": "New",
+    "price": 3000,
+    "beds": 6,
+    "baths": 3,
+    "area": 6000,
+    "address": "4527 N Greenview Ave",
+    "mainPicture": "apartment-3/project-3",
+    "pictures": [
+      "apartment-3/img-1",
+      "apartment-3/img-2",
+      "apartment-3/img-3",
+      "apartment-3/img-4"
+    ]
+  },
+  {
+    "status": "New",
+    "price": 3000,
+    "beds": 2,
+    "baths": 1,
+    "area": 2000,
+    "address": "1 N State Street",
+    "mainPicture": "apartment-4/project-4",
+    "pictures": [
+      "apartment-4/img-1",
+      "apartment-4/img-2",
+      "apartment-4/img-3",
+      "apartment-4/img-4",
+      "apartment-4/img-5",
+      "apartment-4/img-6"
+    ]
+  }
+]

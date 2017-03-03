@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-title">
+                <h1>Apartment Rentals</h1><span class="st-border"></span>
+            </div>
+        </div>
+    </div>
+    <ul id="mainSlider">
+        <% apartmentsList.forEach(function(singleApartment) { %>
+        <li>
+            <article>
+                <div class="listing-wrapper">
+                    <a href="/apartments/<%= singleApartment.address %>">
+                        <div class="listing-overlay">
+                            <h4 class="status">
+                            <span>
+                                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                                <%= singleApartment.status %>
+                            </span>
+                            </h4>
+                            <p id="listing-details">
+                            <span>
+                                <span>
+                                    <span id="rent-price">$<%= singleApartment.price %>/mo</span>
+                                    <span><i class="fa fa-bed" aria-hidden="true"></i></span>
+                                    <%= singleApartment.beds %>bds.
+                                    <span><i class="fa fa-bath" aria-hidden="true"></i></span>
+                                    <%= singleApartment.baths %>ba.
+                                </span>
+                            </span>
+                            </p>
+                            <p id="rent-address">
+                                <span><%= singleApartment.address %></span>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="/images/projects/<%= singleApartment.mainPicture %>.jpg" alt="main-picture"
+                                 class="img-responsive">
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </li>
+        <% }); %>
+    </ul>
+</div>
+
+
+
+
+
+

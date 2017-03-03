@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <% include partials/template/head.ejs %>
+</head>
+<body>
+<header id="header">
+    <% include partials/template/header.ejs %>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-title">
+                <h1>Lease Application</h1><span class="st-border"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">adress of apartment</label>
+                <div class="col-sm-6">
+                    <select class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">lease term - month to month: beginning</label>
+                <div class="col-sm-6">
+                    <input type="date" required class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<footer id="footer">
+    <% include partials/content/footer.ejs %>
+</footer>
+<% include partials/template/scripts.ejs %>
+</body>
+</html>
+<style>
+    .section-title {
+        margin-top: 100px;
+    }
+</style>
