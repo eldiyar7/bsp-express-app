@@ -15,120 +15,133 @@ $(document).ready(function () {
 
 
     $('#application-form').validate({
-        rules : {
-            apartment : {         // rental details section validation
-                required : true
+        rules: {
+            apartment: {         // rental details section validation
+                required: true
             },
 
-            leaseStart : {
-                required : true
+            leaseStart: {
+                required: true
             },
 
-            rent : {
-                required : true,
-                isMoney : true
+            rent: {
+                required: true,
+                isMoney: true
             },
 
-            securityDeposit : {
-                required : true,
-                isMoney : true
+            securityDeposit: {
+                required: true,
+                isMoney: true
             },
 
-            keyDeposit : {
-                required : true,
-                isMoney : true
+            keyDeposit: {
+                required: true,
+                isMoney: true
             },
 
-            fullName : {
-                required : true
+            fullName: {
+                required: true
             },
 
-            emailAddress : {
-                required : true
+            emailAddress: {
+                required: true
             },
 
-            phoneNumber : {
-                required : true,
-                isPhoneNumber : true
+            phoneNumber: {
+                required: true,
+                isPhoneNumber: true
             },
 
-            socialSecurityNumber : {
-                required : true,
-                isSocialSecurityNumber : true
+            socialSecurityNumber: {
+                required: true,
+                isSocialSecurityNumber: true
             },
 
-            dateOfBirth : {
-                required : true
+            dateOfBirth: {
+                required: true
             },
 
-            driverLicense : {
-                required : true
+            driverLicense: {
+                required: true
             },
 
-            emergencyContactName : {
-                required : true,
+            emergencyContactName: {
+                required: true,
             },
 
-            emergencyContactPhoneNumber : {
-                required : true,
-                isPhoneNumber : true
+            emergencyContactPhoneNumber: {
+                required: true,
+                isPhoneNumber: true
             },
 
             // Personal Finance Information Section Validation
-            weeklyIncome : {
-                required : true,
-                isMoney : true
+            weeklyIncome: {
+                required: true,
+                isMoney: true
             },
 
-            otherSourceOfIncomeAmount : {
-                isMoney : true
+            otherSourceOfIncomeAmount: {
+                isMoney: true
             },
 
-            savingsBalance : {
-                isMoney : true
+            savingsBalance: {
+                isMoney: true
             },
 
-            checkingBalance : {
-                isMoney : true
+            checkingBalance: {
+                isMoney: true
             },
             //  Expense Information Section Validation
-            childOrAlimonySupportAmount : {
-                isMoney : true
+            childOrAlimonySupportAmount: {
+                isMoney: true
             },
 
-            totalCreditCardDebtAndPayments : {
-                isMoney : true
+            totalCreditCardDebtAndPayments: {
+                isMoney: true
             },
 
-            monthlyCarPayment : {
-                isMoney : true
+            monthlyCarPayment: {
+                isMoney: true
             },
 
-            agreeTermsAndConditions : {
-                required : true
+            agreeTermsAndConditions: {
+                required: true
             }
 
         },
 
-        submitHandler : function(form) {
-            alert('form submitted')
-        },
-        
-        highlight : function (element, errorClass) {
+        highlight: function (element, errorClass) {
             $(element).closest('.form-group').addClass('has-error');
         },
 
-        unhighlight : function (element, errorClass) {
+        unhighlight: function (element, errorClass) {
             $(element).closest('.form-group').removeClass('has-error');
         },
 
-        errorPlacement : function (error, element) {
+        errorPlacement: function (error, element) {
             error.appendTo(element.parent().parent());
+        },
+
+        submitHandler: function (form) {
+            var formData = $(form).serialize();
+            console.log(formData);
+            $.ajax({
+                type: 'POST',
+                url: '/application',
+                data: JSON.stringify({formData}),
+                dataType: 'json',
+                contentType : 'application/json',
+                success: function (data) {
+                    alert('success');
+                },
+                error : function (error) {
+                    console.log(error);
+                }
+            })
         }
 
 
     })
-
 
 
 });

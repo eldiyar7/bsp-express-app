@@ -18,7 +18,7 @@
     </div>
 
     <div class="row">
-        <form method="post" class="form-horizontal" id="application-form">
+        <form method="" class="form-horizontal" id="application-form">
             <div class="panel panel-default">
                 <div class="panel-heading">Rental Details</div>
                 <div class="panel-body">
@@ -42,10 +42,12 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="leaseStart" class="col-sm-6 control-label">Lease term - month to month: Beginning</label>
+                                <label for="leaseStart" class="col-sm-6 control-label">Lease term - month to month:
+                                    Beginning</label>
                                 <div class="col-sm-6">
                                     <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+                                        <div class="input-group-addon"><i class="fa fa-calendar-check-o"
+                                                                          aria-hidden="true"></i></div>
                                         <input type="date" class="form-control" id="leaseStart" name="leaseStart">
                                     </div>
                                 </div>
@@ -59,7 +61,8 @@
                                 <div class="col-sm-6">
                                     <div class="input-group">
                                         <div class="input-group-addon">$</div>
-                                        <input type="text" id="rent" name="rent" class="form-control" placeholder="ex: 1200">
+                                        <input type="text" id="rent" name="rent" class="form-control"
+                                               placeholder="ex: 1200">
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +73,8 @@
                                 <div class="col-sm-6">
                                     <div class="input-group">
                                         <div class="input-group-addon">$</div>
-                                        <input type="text" id="securityDeposit" name="securityDeposit" class="form-control" placeholder="ex: 2400">
+                                        <input type="text" id="securityDeposit" name="securityDeposit"
+                                               class="form-control" placeholder="ex: 2400">
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +85,8 @@
                                 <div class="col-sm-6">
                                     <div class="input-group">
                                         <div class="input-group-addon">$</div>
-                                        <input type="text" id="keyDeposit" name="keyDeposit" class="form-control" placeholder="ex: 250">
+                                        <input type="text" id="keyDeposit" name="keyDeposit" class="form-control"
+                                               placeholder="ex: 250">
                                     </div>
                                 </div>
                             </div>
@@ -90,582 +95,664 @@
                 </div>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">Applicant Details</div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="fullName" class="col-sm-4 control-label">Full Name</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i>
+                <div class="panel-heading">Applicant Details
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fullName" class="col-sm-4 control-label">Full Name</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-user-o"
+                                                                              aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" class="form-control" id="fullName" name="fullName"
+                                                   placeholder="ex: Victor Ayala">
                                         </div>
-                                        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="ex: Victor Ayala">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="emailAddress" class="col-sm-4 control-label">Email Address</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-envelope-o"
-                                                                          aria-hidden="true"></i></div>
-                                        <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="ex: victor@gmail.com">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="phoneNumber" class="col-sm-4 control-label">Phone Number</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="emailAddress" class="col-sm-4 control-label">Email Address</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-envelope-o"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="email" id="emailAddress" name="emailAddress"
+                                                   class="form-control" placeholder="ex: victor@gmail.com">
                                         </div>
-                                        <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="ex: 847-226-4698">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="socialSecurityNumber" class="col-sm-4 control-label">Social Security Number</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">SSN</div>
-                                        <input type="text" id="socialSecurityNumber" name="socialSecurityNumber" class="form-control" placeholder="ex: 111-22-3333">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="dateOfBirth" class="col-sm-4 control-label">Date of birth</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
-                                        <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" >
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="driverLicense" class="col-sm-4 control-label">Driver License Number</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-id-card-o"
-                                                                          aria-hidden="true"></i></div>
-                                        <input type="text" id="driverLicense" name="driverLicense" class="form-control" placeholder="ex: A100-2000-3000">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">Emergency Contact Information</div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="emergencyContactName" class="col-sm-2 control-label">Name</label>
-                                <div class="col-sm-10">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="phoneNumber" class="col-sm-4 control-label">Phone Number</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-mobile"
+                                                                              aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control"
+                                                   placeholder="ex: 847-226-4698">
                                         </div>
-                                        <input type="text" id="emergencyContactName" name="emergencyContactName" class="form-control" required="required">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="emergencyContactPhoneNumber" class="col-sm-2 control-label">Phone</label>
-                                <div class="col-sm-10">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="socialSecurityNumber" class="col-sm-4 control-label">Social Security
+                                        Number</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">SSN</div>
+                                            <input type="text" id="socialSecurityNumber" name="socialSecurityNumber"
+                                                   class="form-control" placeholder="ex: 111-22-3333">
                                         </div>
-                                        <input type="text" id="emergencyContactPhoneNumber" name="emergencyContactPhoneNumber" class="form-control">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="emergencyContactAddress" class="col-sm-2 control-label">Address</label>
-                                <div class="col-sm-10">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
-                                        <input type="text" id="emergencyContactAddress" name="emergencyContactAddress" class="form-control">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="dateOfBirth" class="col-sm-4 control-label">Date of birth</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-calendar-check-o"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="driverLicense" class="col-sm-4 control-label">Driver License
+                                        Number</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-id-card-o"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="text" id="driverLicense" name="driverLicense"
+                                                   class="form-control" placeholder="ex: A100-2000-3000">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">Residence History</div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Emergency Contact Information</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="emergencyContactName" class="col-sm-2 control-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="emergencyContactName" name="emergencyContactName"
+                                                   class="form-control" required="required">
                                         </div>
-                                        <input type="text" id="currentAddress" name="currentAddress" class="form-control" placeholder="present address" required="required">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <select class="form-control" id="howLongInCurrentAddress" name="howLongInCurrentAddress" required="required">
-                                        <option value="" selected disabled>how long?</option>
-                                        <option value="lessthanyear">less than a year</option>
-                                        <option value="one">1 year</option>
-                                        <option value="two">2 years</option>
-                                        <option value="three">3 years</option>
-                                        <option value="four">4 years</option>
-                                        <option value="five">5 years</option>
-                                        <option value="six">6 years</option>
-                                        <option value="seven">7 years</option>
-                                        <option value="eight">8 years</option>
-                                        <option value="nine">9 years</option>
-                                        <option value="ten">10 years</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" id="currentAddressRent" name="currentAddressRent" class="form-control" placeholder="rent amount" required="required">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="emergencyContactPhoneNumber"
+                                           class="col-sm-2 control-label">Phone</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-mobile"
+                                                                              aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="emergencyContactPhoneNumber"
+                                                   name="emergencyContactPhoneNumber" class="form-control">
                                         </div>
-                                        <input type="text" id="currentlandlordName" name="currentlandlordName" placeholder="landlord name" class="form-control">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="emergencyContactAddress" class="col-sm-2 control-label">Address</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-building-o"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="text" id="emergencyContactAddress"
+                                                   name="emergencyContactAddress" class="form-control">
                                         </div>
-                                        <input type="text" id="landlordNumber" name="landlordNumber" placeholder="landlord number" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
-                                        <input type="text" id="previousAddress" name="previousAddress" class="form-control" placeholder="previous address">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <select class="form-control" id="howLongInPreviousAddress" name="howLongInPreviousAddress">
-                                        <option value="" selected disabled>how long</option>
-                                        <option value="lessthanyear">less than a year</option>
-                                        <option value="one">1 year</option>
-                                        <option value="two">2 years</option>
-                                        <option value="three">3 years</option>
-                                        <option value="four">4 years</option>
-                                        <option value="five">5 years</option>
-                                        <option value="six">6 years</option>
-                                        <option value="seven">7 years</option>
-                                        <option value="eight">8 years</option>
-                                        <option value="nine">9 years</option>
-                                        <option value="ten">10 years</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" id="previousAddressRent" name="previousAddressRent" class="form-control" placeholder="rent amount">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
-                                        <input type="text" id="previousLandlordName" name="previousLandlordName" placeholder="landlord name" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-                                        <input type="text" id="previousLandlordNumber" name="previousLandlordNumber" placeholder="landlord number" class="form-control">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">Employment Information</div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
-                                        <input type="text" id="currentEmployerName" name="currentEmployerName" class="form-control" placeholder="current employer name">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
-                                        <input type="text" id="currentEmployerAddress" name="currentEmployerAddress" class="form-control" placeholder="employer address">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                                        <input type="text" id="currentEmployerNumber" name="currentEmployerNumber" class="form-control" placeholder="employer number">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-black-tie" aria-hidden="true"></i></div>
-                                        <input type="text" id="currentPosition" name="currentPosition" class="form-control" placeholder="position">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-eye" aria-hidden="true"></i></div>
-                                        <input type="text" id="currentSupervisorName" name="currentSupervisorName" class="form-control" placeholder="supervisor name">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <select class="form-control" id="howLongInCurrentPosition" name="howLongInCurrentPosition">
-                                        <option value="" selected disabled>how long</option>
-                                        <option value="lessthanyear">less than a year</option>
-                                        <option value="one">1 year</option>
-                                        <option value="two">2 years</option>
-                                        <option value="three">3 years</option>
-                                        <option value="four">4 years</option>
-                                        <option value="five">5 years</option>
-                                        <option value="six">6 years</option>
-                                        <option value="seven">7 years</option>
-                                        <option value="eight">8 years</option>
-                                        <option value="nine">9 years</option>
-                                        <option value="ten">10 years</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
-                                        <input type="text" id="previousEmployerName" name="previousEmployerName" class="form-control" placeholder="previous employer name">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
-                                        <input type="text" id="previousEmployerAddress" name="previousEmployerAddress" class="form-control" placeholder="employer address">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Residence History</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-building-o"
+                                                                              aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="currentAddress" name="currentAddress"
+                                                   class="form-control" placeholder="present address"
+                                                   required="required">
                                         </div>
-                                        <input type="text" id="previousEmployerNumber" name="previousEmployerNumber" class="form-control" placeholder="employer number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <select class="form-control" id="howLongInCurrentAddress"
+                                                name="howLongInCurrentAddress" required="required">
+                                            <option value="" selected disabled>how long?</option>
+                                            <option value="lessthanyear">less than a year</option>
+                                            <option value="one">1 year</option>
+                                            <option value="two">2 years</option>
+                                            <option value="three">3 years</option>
+                                            <option value="four">4 years</option>
+                                            <option value="five">5 years</option>
+                                            <option value="six">6 years</option>
+                                            <option value="seven">7 years</option>
+                                            <option value="eight">8 years</option>
+                                            <option value="nine">9 years</option>
+                                            <option value="ten">10 years</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="currentAddressRent" name="currentAddressRent"
+                                                   class="form-control" placeholder="rent amount" required="required">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="currentlandlordName" name="currentlandlordName"
+                                                   placeholder="landlord name" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-mobile"
+                                                                              aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="landlordNumber" name="landlordNumber"
+                                                   placeholder="landlord number" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-black-tie" aria-hidden="true"></i></div>
-                                        <input type="text" id="previousPosition" name="previousPosition" class="form-control" placeholder="position">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-building-o"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="text" id="previousAddress" name="previousAddress"
+                                                   class="form-control" placeholder="previous address">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-eye" aria-hidden="true"></i></div>
-                                        <input type="text" id="previousSupervisorName" name="previousSupervisorName" class="form-control" placeholder="supervisor name">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <select class="form-control" id="howLongInPreviousAddress"
+                                                name="howLongInPreviousAddress">
+                                            <option value="" selected disabled>how long</option>
+                                            <option value="lessthanyear">less than a year</option>
+                                            <option value="one">1 year</option>
+                                            <option value="two">2 years</option>
+                                            <option value="three">3 years</option>
+                                            <option value="four">4 years</option>
+                                            <option value="five">5 years</option>
+                                            <option value="six">6 years</option>
+                                            <option value="seven">7 years</option>
+                                            <option value="eight">8 years</option>
+                                            <option value="nine">9 years</option>
+                                            <option value="ten">10 years</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <select class="form-control" id="howLongInPreviousPosition" name="howLongInPreviousPosition">
-                                        <option value="" selected disabled>how long</option>
-                                        <option value="lessthanyear">less than a year</option>
-                                        <option value="one">1 year</option>
-                                        <option value="two">2 years</option>
-                                        <option value="three">3 years</option>
-                                        <option value="four">4 years</option>
-                                        <option value="five">5 years</option>
-                                        <option value="six">6 years</option>
-                                        <option value="seven">7 years</option>
-                                        <option value="eight">8 years</option>
-                                        <option value="nine">9 years</option>
-                                        <option value="ten">10 years</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">Personal Finance Information</div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="weeklyIncome" class="control-label">Please provide income information (ex: 1200)</label>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" id="weeklyIncome" name="weeklyIncome" class="form-control" placeholder="weekly income">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="previousAddressRent" name="previousAddressRent"
+                                                   class="form-control" placeholder="rent amount">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" id="otherSourceOfIncomeAmount" name="otherSourceOfIncomeAmount" class="form-control" placeholder="other source of income">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="previousLandlordName" name="previousLandlordName"
+                                                   placeholder="landlord name" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" id="savingsBalance" name="savingsBalance" class="form-control" placeholder="savings balance">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" id="checkingBalance" name="checkingBalance" class="form-control" placeholder="checking balance">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label for="" class="control-label">Please provide expense information (ex: 500)</label>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" id="childOrAlimonySupportAmount" name="childOrAlimonySupportAmount" class="form-control" placeholder="child/alimony support">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" id="totalCreditCardDebtAndPayments" name="totalCreditCardDebtAndPayments" class="form-control" placeholder="Credit Card/Payments">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" id="monthlyCarPayment" name="monthlyCarPayment" class="form-control" placeholder="monthly car payment">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-mobile"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="text" id="previousLandlordNumber" name="previousLandlordNumber"
+                                                   placeholder="landlord number" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">References</div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="referenceName" class="col-sm-2 control-label">Name</label>
-                                <div class="col-sm-10">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Employment Information</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="currentEmployerName" name="currentEmployerName"
+                                                   class="form-control" placeholder="current employer name">
                                         </div>
-                                        <input type="text" id="referenceName" name="referenceName" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-building-o"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="text" id="currentEmployerAddress" name="currentEmployerAddress"
+                                                   class="form-control" placeholder="employer address">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-phone"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="text" id="currentEmployerNumber" name="currentEmployerNumber"
+                                                   class="form-control" placeholder="employer number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-black-tie"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="text" id="currentPosition" name="currentPosition"
+                                                   class="form-control" placeholder="position">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-eye" aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="currentSupervisorName" name="currentSupervisorName"
+                                                   class="form-control" placeholder="supervisor name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <select class="form-control" id="howLongInCurrentPosition"
+                                                name="howLongInCurrentPosition">
+                                            <option value="" selected disabled>how long</option>
+                                            <option value="lessthanyear">less than a year</option>
+                                            <option value="one">1 year</option>
+                                            <option value="two">2 years</option>
+                                            <option value="three">3 years</option>
+                                            <option value="four">4 years</option>
+                                            <option value="five">5 years</option>
+                                            <option value="six">6 years</option>
+                                            <option value="seven">7 years</option>
+                                            <option value="eight">8 years</option>
+                                            <option value="nine">9 years</option>
+                                            <option value="ten">10 years</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="referenceRelationship" class="col-sm-3 control-label">Relationship</label>
-                                <div class="col-sm-9">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="previousEmployerName" name="previousEmployerName"
+                                                   class="form-control" placeholder="previous employer name">
                                         </div>
-                                        <input type="text" id="referenceRelationship" name="referenceRelationship" class="form-control">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="referencePhone" class="col-sm-2 control-label">Phone</label>
-                                <div class="col-sm-10">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-building-o"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="text" id="previousEmployerAddress"
+                                                   name="previousEmployerAddress" class="form-control"
+                                                   placeholder="employer address">
                                         </div>
-                                        <input type="text" id="referencePhone" name="referencePhone" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-phone"
+                                                                              aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="previousEmployerNumber" name="previousEmployerNumber"
+                                                   class="form-control" placeholder="employer number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-black-tie"
+                                                                              aria-hidden="true"></i></div>
+                                            <input type="text" id="previousPosition" name="previousPosition"
+                                                   class="form-control" placeholder="position">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-eye" aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="previousSupervisorName" name="previousSupervisorName"
+                                                   class="form-control" placeholder="supervisor name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <select class="form-control" id="howLongInPreviousPosition"
+                                                name="howLongInPreviousPosition">
+                                            <option value="" selected disabled>how long</option>
+                                            <option value="lessthanyear">less than a year</option>
+                                            <option value="one">1 year</option>
+                                            <option value="two">2 years</option>
+                                            <option value="three">3 years</option>
+                                            <option value="four">4 years</option>
+                                            <option value="five">5 years</option>
+                                            <option value="six">6 years</option>
+                                            <option value="seven">7 years</option>
+                                            <option value="eight">8 years</option>
+                                            <option value="nine">9 years</option>
+                                            <option value="ten">10 years</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">Therms</div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="col-md-3 control-label">Terms of use</label>
-                                <div class="col-md-9">
-                                    <div style="border: 1px solid #e5e5e5; height: 200px; overflow: auto; padding: 10px;">
-                                        <p>TERMS OF ACCEPTING APPLICATION</p>
-                                        <ol>
-                                            <li>I AUTHORIZE AGENTS OF “Blue Slate Properties”. TO PERFORM A CREDIT
-                                                CHECK.
-                                            </li>
-                                            <li>IF APPLICANT IS ACCEPTED, THE DEPOSIT (#12 ABOVE) WILL APPLY TOWARDS THE
-                                                SECURITY DEPOSIT DUE.
-                                            </li>
-                                            <li>IF APPLICANT IS NOT ACCEPTED, $200.00 WILL BE REFUNDED.</li>
-                                            <li>PRIOR TO MOVE IN, APPLICANT WILL SIGN A LEASE, AND PAY THE BALANCE OF
-                                                THE SECURITY DEPOSIT AND THE FIRST MONTH RENT.
-                                            </li>
-                                            <li>DEPOSIT WITH APPLICATION: MINIMUM $230 ($30
-                                                CREDIT NON-REFUNDABLE)
-                                            </li>
-                                            <li>IF APPLICANT BACKS OUT FOR ANY REASON AFTER APPROVAL, APPLICANT FORFEIT
-                                                THE DEPOSIT OF $230.
-                                            </li>
-                                        </ol>
-                                        <p>IMPORTANT NOTE: “Blue Slate Properties or its agents” WILL NOT BE RESPONSIBLE
-                                            FOR PERSONAL PROPERTY. CONSULT AN INSURANCE AGENT FOR PROPER COVERAGE. NO
-                                            DOGS OR WATERBEDS ACCEPTED. </p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Personal Finance Information</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="weeklyIncome" class="control-label">Please provide income information (ex:
+                                    1200)</label>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="weeklyIncome" name="weeklyIncome"
+                                                   class="form-control" placeholder="weekly income">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="col-md-9 col-md-offset-3">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" name="agreeTermsAndConditions" value="agreeTermsAndConditions"/> Agree with the terms and conditions
-                                        </label>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="otherSourceOfIncomeAmount"
+                                                   name="otherSourceOfIncomeAmount" class="form-control"
+                                                   placeholder="other source of income">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="savingsBalance" name="savingsBalance"
+                                                   class="form-control" placeholder="savings balance">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="checkingBalance" name="checkingBalance"
+                                                   class="form-control" placeholder="checking balance">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-9 col-md-offset-3">
-                            <button type="submit" class="btn btn-primary">Submit Form</button>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="" class="control-label">Please provide expense information (ex: 500)</label>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="childOrAlimonySupportAmount"
+                                                   name="childOrAlimonySupportAmount" class="form-control"
+                                                   placeholder="child/alimony support">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="totalCreditCardDebtAndPayments"
+                                                   name="totalCreditCardDebtAndPayments" class="form-control"
+                                                   placeholder="Credit Card/Payments">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="monthlyCarPayment" name="monthlyCarPayment"
+                                                   class="form-control" placeholder="monthly car payment">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">References</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="referenceName" class="col-sm-2 control-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="referenceName" name="referenceName"
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="referenceRelationship"
+                                           class="col-sm-3 control-label">Relationship</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="referenceRelationship" name="referenceRelationship"
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="referencePhone" class="col-sm-2 control-label">Phone</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-mobile"
+                                                                              aria-hidden="true"></i>
+                                            </div>
+                                            <input type="text" id="referencePhone" name="referencePhone"
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Therms</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">Terms of use</label>
+                                    <div class="col-md-9">
+                                        <div style="border: 1px solid #e5e5e5; height: 200px; overflow: auto; padding: 10px;">
+                                            <p>TERMS OF ACCEPTING APPLICATION</p>
+                                            <ol>
+                                                <li>I AUTHORIZE AGENTS OF “Blue Slate Properties”. TO PERFORM A CREDIT
+                                                    CHECK.
+                                                </li>
+                                                <li>IF APPLICANT IS ACCEPTED, THE DEPOSIT (#12 ABOVE) WILL APPLY TOWARDS
+                                                    THE
+                                                    SECURITY DEPOSIT DUE.
+                                                </li>
+                                                <li>IF APPLICANT IS NOT ACCEPTED, $200.00 WILL BE REFUNDED.</li>
+                                                <li>PRIOR TO MOVE IN, APPLICANT WILL SIGN A LEASE, AND PAY THE BALANCE
+                                                    OF
+                                                    THE SECURITY DEPOSIT AND THE FIRST MONTH RENT.
+                                                </li>
+                                                <li>DEPOSIT WITH APPLICATION: MINIMUM $230 ($30
+                                                    CREDIT NON-REFUNDABLE)
+                                                </li>
+                                                <li>IF APPLICANT BACKS OUT FOR ANY REASON AFTER APPROVAL, APPLICANT
+                                                    FORFEIT
+                                                    THE DEPOSIT OF $230.
+                                                </li>
+                                            </ol>
+                                            <p>IMPORTANT NOTE: “Blue Slate Properties or its agents” WILL NOT BE
+                                                RESPONSIBLE
+                                                FOR PERSONAL PROPERTY. CONSULT AN INSURANCE AGENT FOR PROPER COVERAGE.
+                                                NO
+                                                DOGS OR WATERBEDS ACCEPTED. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-9 col-md-offset-3">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" id="agreeTermsAndConditions"
+                                                       name="agreeTermsAndConditions"
+                                                       value="agreeTermsAndConditions"/> Agree with the terms and
+                                                conditions
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-md-offset-3">
+                                <button type="submit" id="submit-button" name="submit-button" class="btn btn-primary">
+                                    Submit Form
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -697,7 +784,8 @@
     .section-title {
         margin-top: 100px;
     }
+
     .error {
-        color : #a94442;
+        color: #a94442;
     }
 </style>

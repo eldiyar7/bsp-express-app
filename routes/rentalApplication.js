@@ -13,7 +13,7 @@ router.get('/application', function (req, res, next) {
 });
 
 router.post('/application', function (req, res, next) {
-    res.send('nothing');
+    res.send(req.body);
 });
 
 

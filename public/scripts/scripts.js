@@ -41,9 +41,12 @@
                 subject: $("#contact-form-subject").val(),
                 message: $("#contact-form-message").val()
             }),
-            contentType: 'application/json'
+            contentType: 'application/json',
+            success : function (data) {
+                $('.btn').blur();
+                $("#contactus-form")[0].reset();
+            }
         });
-        window.location.reload();
 
     });
 
