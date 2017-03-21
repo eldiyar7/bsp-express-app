@@ -1,18 +1,9 @@
 ﻿$(function () {
     'use strict';
-// =============================================================== preloader
-    (function () {
-        $(window).on("load", function () {
-            $('#pre-status').fadeOut();
-            $('#st-preloader').delay(350).fadeOut('slow');
-        });
-    }());
-
-// =============================================================== index
+// =============================================================== 'projects' section slider
     $(document).ready(function () {
-        $("#mainSlider").lightSlider();
+        $("#projects-slider").lightSlider();
     });
-
 // =============================================================== apartmentsView
     $(document).ready(function () {
         $('#content-slider').lightSlider({
@@ -28,11 +19,11 @@
             }
         });
     });
-// =============================================================== contact form
+// =============================================================== 'contact-us' form
     $("#contactus-form").submit(function (event) {
         event.preventDefault();
         $.ajax({
-            url: "/api",
+            url: "/contacts",
             type: "POST",
             data: JSON.stringify({
                 name: $("#contact-form-name").val(),
@@ -47,14 +38,17 @@
                 $("#contactus-form")[0].reset();
             }
         });
-
     });
-
-// =============================================================== hide #path from url
+// =============================================================== hide '#' path from url
     $(window).on('hashchange', function(e){
         history.replaceState ("", document.title, e.originalEvent.oldURL);
     });
     // history.pushState("", document.title, window.location.pathname);
-
+// =============================================================== 'application' form
+    $(function () {
+        $('#application-form').parsley().on('form:submit', function() {
+            alert('Your form is submitted!')
+        })
+    });
 
 });

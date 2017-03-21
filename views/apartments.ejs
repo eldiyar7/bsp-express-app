@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/template/head.ejs %>
+</head>
+<body>
+<header id="header">
+    <% include partials/template/header.ejs %>
+</header>
+<div class="container-fluid">
+    <div class="col-md-8">
+        <ul id="content-slider" class="content-slider">
+            <% apartment.pictures.forEach(function(picture) { %>
+            <li class="col-xs-12 col-md-3" data-src="/images/projects/<%= picture %>.jpg">
+                <img src="/images/projects/<%= picture %>.jpg" class="img-responsive">
+            </li>
+            <% }); %>
+        </ul>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-title">
+                <h1><%= apartment.address %></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <% include partials/content/footer.ejs %>
+</footer>
+<% include partials/template/scripts.ejs %>
+</body>
+</html>

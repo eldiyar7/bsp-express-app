@@ -1,28 +1,21 @@
 var express = require('express');
 var router = express.Router();
+var apartments = require('../data/apartments.json');
 var _ = require('lodash');
 
-router.get('/apartments', function (req, res) {
-    var allApartments = req.app.get("apartmentsData");
-
-    res.redirect('/#our-works');
-});
-
-router.get('/apartments/:apartmentid', function (req, res) {
-
-    var allApartments = req.app.get('apartmentsData');
+router.get('/:apartmentid', function (req, res) {
     var apartmentId = req.params.apartmentid;
-
-    var retrievedApartment = _.find(allApartments, function (apartment) {
-        return apartment.address == apartmentId;
-    });
-
-    res.render('apartmentsView', {
-        siteTitle: retrievedApartment.address,
-        pageTitle: 'Apartments',
-        apartment: retrievedApartment,
-
-    });
+    var apartment = _.find(apartments, a => a.address === apartmentId);
+    if(!apartment) {
+        res.sendStatus(404);
+        return;
+    }
+    res.render('apartments',
+        {
+            siteTitle: apartment.address,
+            pageTitle: apartment.status,
+            apartment: apartment
+        });
 });
 
 module.exports = router;
