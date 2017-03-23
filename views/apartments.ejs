@@ -7,9 +7,9 @@
 <header id="header">
     <% include partials/template/header.ejs %>
 </header>
-<div class="container-fluid">
+<div id="apartment-pics-wrapper" class="container-fluid">
     <div class="col-md-8">
-        <ul id="content-slider" class="content-slider">
+        <ul id="apartment-pictures" class="content-slider">
             <% apartment.pictures.forEach(function(picture) { %>
             <li class="col-xs-12 col-md-3" data-src="/images/projects/<%= picture %>.jpg">
                 <img src="/images/projects/<%= picture %>.jpg" class="img-responsive">

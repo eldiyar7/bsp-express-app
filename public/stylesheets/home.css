@@ -278,15 +278,7 @@ a.bsp-logo {
 .st-service h2 i {
     margin-right: 10px;
 }
-.st-service p {
-}
-/* =================================================================== PROJECTS === */
-#projects {
-    padding-bottom: 1em;
-}
-#projects>article {
-    box-sizing: border-box;
-}
+/* =================================================================== PROJECTS/Apartment Rental === */
 #projects h4.status {
     font-family: 'Montserrat', sans-serif;
     font-size: 13.5px;
@@ -316,6 +308,10 @@ a.bsp-logo {
     position: absolute;
     top: 0em;
     right: 2em;
+}
+
+.lSSlideOuter .lSPager.lSpg {
+    display: none;
 }
 
 /* ======================================================================= ABOUT US === */

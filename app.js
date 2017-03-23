@@ -18,12 +18,12 @@ app.use('/scripts', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/scripts', express.static(__dirname + '/node_modules/parsleyjs/dist'));
 
 app.get('/', function (req, res, next)  {
-    res.render('index',
+    res.render('home',
         {
             siteTitle: 'Blue Slate Properties',
             pageTitle: 'Home',
             pageId: 'home',
-            apartmentsList: req.app.get("apartments")
+            apartments: req.app.get("apartments")
         }
     )
 });

@@ -4,22 +4,7 @@
     $(document).ready(function () {
         $("#projects-slider").lightSlider();
     });
-// =============================================================== apartmentsView
-    $(document).ready(function () {
-        $('#content-slider').lightSlider({
-            item: 3,
-            loop: true,
-            slideMargin: 0,
-            enableDrag: false,
-            currentPagerPosition: 'left',
-            onSliderLoad: function (el) {
-                el.lightGallery({
-                    selector: '#content-slider .lslide'
-                });
-            }
-        });
-    });
-// =============================================================== 'contact-us' form
+// =============================================================== 'contact' section form
     $("#contactus-form").submit(function (event) {
         event.preventDefault();
         $.ajax({
@@ -33,7 +18,7 @@
                 message: $("#contact-form-message").val()
             }),
             contentType: 'application/json',
-            success : function (data) {
+            success : function () {
                 $('.btn').blur();
                 $("#contactus-form")[0].reset();
             }
@@ -44,11 +29,5 @@
         history.replaceState ("", document.title, e.originalEvent.oldURL);
     });
     // history.pushState("", document.title, window.location.pathname);
-// =============================================================== 'application' form
-    $(function () {
-        $('#application-form').parsley().on('form:submit', function() {
-            alert('Your form is submitted!')
-        })
-    });
 
 });
