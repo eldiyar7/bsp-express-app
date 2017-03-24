@@ -21,6 +21,9 @@
             success : function () {
                 $('.btn').blur();
                 $("#contactus-form")[0].reset();
+            },
+            error: function () {
+                $("#contactus-form")[0].reset();
             }
         });
     });
