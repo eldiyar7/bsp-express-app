@@ -1,4 +1,6 @@
 ﻿$(function () {
+
+
     'use strict';
 // =============================================================== 'projects' section slider
     $(document).ready(function () {
@@ -18,16 +20,17 @@
                 message: $("#contact-form-message").val()
             }),
             contentType: 'application/json',
-            success : function () {
+            success: function () {
                 $('.btn').blur();
                 $("#contactus-form")[0].reset();
             }
         });
     });
 // =============================================================== hide '#' path from url
-    $(window).on('hashchange', function(e){
-        history.replaceState ("", document.title, e.originalEvent.oldURL);
+    $(window).on('hashchange', function (e) {
+        history.replaceState("", document.title, e.originalEvent.oldURL);
     });
     // history.pushState("", document.title, window.location.pathname);
+
 
 });

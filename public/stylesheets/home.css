@@ -262,14 +262,10 @@ a.bsp-logo {
 }
 /* ================================================================= SERVICES === */
 #services {
-    background-color: #f5f5f5;
+    margin-top: 80px;
 }
 .section-title {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.section-title h1 {
-    margin-top: 0;
+    padding-bottom: 30px;
 }
 .st-service h2 {
     font-size: 1.2em;
@@ -279,6 +275,12 @@ a.bsp-logo {
     margin-right: 10px;
 }
 /* =================================================================== PROJECTS/Apartment Rental === */
+#projects {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 80px;
+    background-color: #f5f5f5;
+}
 #projects h4.status {
     font-family: 'Montserrat', sans-serif;
     font-size: 13.5px;
@@ -315,9 +317,6 @@ a.bsp-logo {
 }
 
 /* ======================================================================= ABOUT US === */
-#about-us {
-    background-color: #f5f5f5;
-}
 #about-us .about-us {
     padding-left: 15%;
     padding-right: 15%;
@@ -329,9 +328,6 @@ a.bsp-logo {
 }
 #about-us .about-us .btn-send {
     margin-top: 30px;
-}
-#about-us .our-office {
-    padding-right: 0px;
 }
 .office-carousel-left,
 .office-carousel-right {
@@ -371,6 +367,7 @@ a.bsp-logo {
 #contact {
     padding-top: 130px;
     padding-bottom: 120px;
+    background-color: #f5f5f5;
 }
 .contact-info .contact-content {
     margin-bottom: 30px;
