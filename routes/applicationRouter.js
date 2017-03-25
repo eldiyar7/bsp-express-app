@@ -3,6 +3,8 @@ var router = express.Router();
 var fs = require('fs');
 var apartments = require('../data/apartments.json');
 var applications = require('../data/applications.json');
+var path = require('path');
+
 
 router.route('/')
     .get(function (req, res, next) {
@@ -16,9 +18,10 @@ router.route('/')
     })
     .post(function (req, res, next) {
         applications.push(req.body);
-        fs.writeFile('../bsp_webapp/data/applications.json', JSON.stringify(applications), 'utf8', function (err) {
+        fs.writeFile(path.join(_dirname, '../bsp_webapp/data/applications.json'), JSON.stringify(applications), 'utf8', function (err) {
             if (err) {
-                console.log(err);
+                next(err);
+                return;
             }
         });
         res.redirect('/');
